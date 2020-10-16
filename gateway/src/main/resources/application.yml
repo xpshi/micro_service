@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://xpshi:123456@localhost:8761/eureka
     register-with-eureka: true
     fetch-registry: true
   instance:
@@ -16,6 +16,7 @@ eureka:
     lease-expiration-duration-in-seconds: 2
 zuul:
   routes:
+    # 这个名称就是我们注册到 Eureka 中的名称，是属性文件中的 spring.application.name
     order:
       serviceId: order
       path: /api/order/**

@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: register-center
+  security:
+    user:
+      name: xpshi
+      password: 123456
 eureka:
   instance:
     hostname: localhost
