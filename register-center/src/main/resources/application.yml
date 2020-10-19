@@ -20,3 +20,5 @@ eureka:
   server:
     # 关掉自我保护机制
     enable-self-preservation: false
+    # 清理间隔 默认 60000 毫秒
+    eviction-interval-timer-in-ms: 5000
