@@ -19,8 +19,8 @@ zuul:
     # 这个名称就是我们注册到 Eureka 中的名称，是属性文件中的 spring.application.name
     order:
       serviceId: order
-      path: /api/order/**
+      path: /api/order-gateway/**
     customer:
       serviceId: customer
-      path: /api/customer/**
+      path: /api/customer-gateway/**
 
